@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"/>
+</head>
+<body>
+<table class="table table-striped">
+    <thead>
+        <tr><th>id</th><th>标题</th><th>图片</th><th>上映日期</th></tr>
+    </thead>
+    <tbody>
+    <% for(var i=0;i<data.length;i++){ %>
+        <tr>
+            <td><%=data[i].m_id%></td>
+            <td><%=data[i].m_title%></td>
+            <td><img src="<%=data[i].m_img%>" alt=""/></td>
+            <td><%=data[i].m_date%></td>
+        </tr>
+    <% } %>
+    </tbody>
+</table>
+</body>
+</html>
